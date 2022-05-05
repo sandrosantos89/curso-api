@@ -1,0 +1,54 @@
+package com.osf.academyosf.entities;
+
+public class Product {
+
+	private Integer id;
+	private String name;
+	private int model_year;
+	private Double list_price;
+
+	/*implementar depois Brand, Category, Stock, Store*/
+
+	public Product() {
+
+	}
+
+	public Product(String name) {
+		this.name = name;
+	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getModel_year() {
+		return model_year;
+	}
+
+	public void setModel_year(int model_year) {
+		this.model_year = model_year;
+	}
+
+	public Double getList_price() {
+		return list_price;
+	}
+
+	public void setList_price(Double list_price) {
+		this.list_price = list_price;
+	}
+	
+	
+
+}
