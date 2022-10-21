@@ -1,8 +1,8 @@
 package com.ssantos.api.services;
 
-import com.ssantos.api.domain.User;
+import com.ssantos.api.domain.Users;
 
 public interface UserService {
 
-	User findById(Integer id);
+	Users findById(Integer id);
 }

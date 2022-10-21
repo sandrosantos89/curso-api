@@ -7,18 +7,18 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.ssantos.api.domain.User;
+import com.ssantos.api.domain.Users;
 import com.ssantos.api.services.UserService;
 
 @RestController
-@RequestMapping(value = "/user")
+@RequestMapping(value = "/users")
 public class UserResource {
 	
 	@Autowired
 	private UserService service;
 	
 	@GetMapping(value = "/{id}")
-	public ResponseEntity<User> findById(@PathVariable Integer id){
+	public ResponseEntity<Users> findById(@PathVariable Integer id){
 		return ResponseEntity.ok().body(service.findById(id));
 		
 	}
